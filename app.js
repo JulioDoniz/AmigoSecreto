@@ -7,7 +7,7 @@ function agregarAmigo() {
     if(nombre !== "" && restriccion.test(nombre)) {
         amigos.push(nombre);
         actualizarListaAmigos();
-        document.getElementById("amigo")
+        document.getElementById("amigo").value = "";
     } else {
         alert("Escribe un nombre valido por favor")
     }
